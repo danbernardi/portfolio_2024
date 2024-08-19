@@ -1,5 +1,6 @@
 {
   "name": "portfolio_2024",
+  "description": "Portfolio site for Daniel Bernardi built with typescript, nextjs, tailwindcss, and react",
   "version": "0.1.0",
   "private": true,
   "scripts": {
