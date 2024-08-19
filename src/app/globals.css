@@ -6,6 +6,16 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  
+  --grey-darkest: #1F2123;
+  --grey-dark: #26282B;
+  --grey: #35383D;
+  --grey-light: #98A4AC;
+  --grey-lightest: #F7F7F7;
+
+  --pink: #F76666;
+  --blue: #23C5C5;
+  --green: #A6DC37;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,13 +27,7 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--grey-lightest);
 }
 
 @layer utilities {
