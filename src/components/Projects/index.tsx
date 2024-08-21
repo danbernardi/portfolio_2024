@@ -47,7 +47,7 @@ const Projects = () => {
       <div className="min-h-screen pt-24 mb-24 relative">
         <div className="w-[80px] h-2 bg-pink mb-10" />
         <h2 className="text-2xl font-extrabold uppercase mb-2">Some cool stuff I&apos;ve built</h2>
-        <p className="text-grey-light text-sm max-w-[460px] mb-2">Here's a handful of personal projects I've been working on recently.</p>
+        <p className="text-grey-light text-sm max-w-[460px] mb-2">Here&apos;s a handful of personal projects I&apos;ve been working on recently.</p>
 
 
         {projects.map((project) => (

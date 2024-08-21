@@ -71,7 +71,7 @@ const Experience = () => {
       <div className="min-h-screen pt-24 mb-24 relative">
         <div className="w-[80px] h-2 bg-green mb-10" />
         <h2 className="text-2xl font-extrabold uppercase mb-2">What have I been up to?</h2>
-        <p className="text-grey-light text-sm max-w-[460px] mb-2">I've had the opportunity to work with some amazing companies and teams over the years.</p>
+        <p className="text-grey-light text-sm max-w-[460px] mb-2">I&apos;ve had the opportunity to work with some amazing companies and teams over the years.</p>
 
         {jobs.map((job) => (
           <div key={job.id} className="grid grid-cols-[180px,1fr] my-10"> 
