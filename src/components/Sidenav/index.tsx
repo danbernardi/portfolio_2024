@@ -33,7 +33,7 @@ const Sidenav = () => {
         <h1 className="text-6xl font-extrabold uppercase mb-6">Daniel Bernardi<span className="text-blue">.</span></h1>
         <p className="text-grey-light">I design and develop things on the web. Some of those things are pretty neat.</p>
 
-        <ul className="my-24 flex flex-col">
+        <ul className="my-16 md:my-24 flex flex-col">
           {links.map((link) => (
             <SidenavLink
               key={link.href}
