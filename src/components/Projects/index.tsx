@@ -65,7 +65,7 @@ const Projects = () => {
   return (
     <>
       <Anchor id="projects" />
-      <div className="lg:min-h-screen pt-10 mb-10 md:pt-24 md:mb-24 relative @container">
+      <div className="lg:min-h-[100svh] pt-10 mb-10 md:pt-24 md:mb-24 relative @container">
         <div className="w-[80px] h-2 bg-pink mb-10" />
         <h2 className="text-2xl font-extrabold uppercase mb-2">Some cool stuff I&apos;ve built</h2>
         <p className="text-grey-light text-sm max-w-[460px] mb-2">Here&apos;s a handful of personal projects I&apos;ve been working on recently.</p>
