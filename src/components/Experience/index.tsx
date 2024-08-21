@@ -40,27 +40,27 @@ const jobs: Job[] = [
     startDate: "May 2015",
     endDate: "Apr 2019",
     description: "Inventore vel possimus minus voluptatum debitis unde et nulla sit. Praesentium ad est porro non ab natus tenetur aut nulla. Labore ut cum sunt provident voluptate cumque minima.",
-    stack: ["React", 'JavaScript', "Sass", 'Redux', 'GSAP', 'D3.js', 'React Native'],
+    stack: ["React", 'JavaScript', "Sass", 'Redux', 'GSAP', 'D3.js', 'React Native', 'UX Design'],
   },
   {
     id: 4,
-    title: "Front End Developer / Web Designer",
+    title: "Front End Developer / UX Designer",
     company: "Zen Den Web Design",
     location: "San Francisco, CA",
     startDate: "Sep 2013",
     endDate: "Apr 2015",
     description: "Autem ab animi sint iste similique quo sint. Asperiores adipisci enim hic deserunt molestias et nemo dolor provident. Eos impedit ducimus rerum hic tempora qui quod blanditiis voluptatem nobis. Nisi qui facilis eum aliquam commodi nobis.",
-    stack: ['Wordpress', 'HTML', 'CSS', 'JavaScript', 'PHP'],
+    stack: ['Wordpress', 'HTML', 'CSS', 'JavaScript', 'PHP', 'UX Design'],
   },
   {
     id: 5,
-    title: "Front End Developer / Web Designer",
+    title: "Front End Developer / UX Designer",
     company: "Bernardi Web Design",
     location: "Antioch, CA",
     startDate: "Aug 2010",
     endDate: "Sep 2013",
     description: "Et veniam alias fuga corrupti expedita nobis in hic. Tenetur sed aut fuga eum qui qui voluptatum eum nemo asperiores beatae.",
-    stack: ['Wordpress', 'HTML', 'CSS', 'JavaScript', 'PHP'],
+    stack: ['Wordpress', 'HTML', 'CSS', 'JavaScript', 'PHP', 'UX Design'],
   }
 ];
 

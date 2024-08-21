@@ -30,7 +30,7 @@ const Sidenav = () => {
       <div>
         <div className="w-[160px] h-2 bg-blue mb-10" />
         <p className="text-sm mb-2">Hi, my name is</p>
-        <h1 className="text-6xl font-extrabold uppercase mb-6">Daniel Bernardi<span className="text-blue">.</span></h1>
+        <h1 className="text-5xl sm:text-6xl font-extrabold uppercase mb-6">Daniel Bernardi<span className="text-blue">.</span></h1>
         <p className="text-grey-light">I design and develop things on the web. Some of those things are pretty neat.</p>
 
         <ul className="my-16 md:my-24 flex flex-col">
