@@ -11,8 +11,8 @@ const ScrollIndicator = () => {
   });
 
   return (
-    <div className="relative z-20">
-      <motion.div className="fixed left-0 bottom-0 bg-grey h-6 w-full origin-left" style={{ scaleX }} />
+    <div className="relative z-20 hidden lg:block">
+      <motion.div className="fixed left-0 bottom-0 bg-grey-lightest h-2 w-full origin-left" style={{ scaleX }} />
     </div>
   );
 }

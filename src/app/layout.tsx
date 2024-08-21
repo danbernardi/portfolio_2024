@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(inter.className, 'bg-grey-darkest')}>
-      <div className="grid grid-cols-[4fr,2fr,6fr] min-h-screen px-10 max-w-[1280px] mx-auto relative">
+      <div className="grid grid-cols-[1fr] lg:grid-cols-[4fr,2fr,6fr] min-h-screen px-6 sm:px-10 max-w-[1280px] mx-auto relative">
         <AppContextProvider>
           <Sidenav />
           <ScrollIndicator />

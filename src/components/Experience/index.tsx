@@ -68,14 +68,14 @@ const Experience = () => {
   return (
     <>
       <Anchor id="experience" />
-      <div className="min-h-screen pt-24 mb-24 relative">
+      <div className="lg:min-h-screen pt-10 mb-10 md:pt-24 md:mb-24 relative @container">
         <div className="w-[80px] h-2 bg-green mb-10" />
         <h2 className="text-2xl font-extrabold uppercase mb-2">What have I been up to?</h2>
         <p className="text-grey-light text-sm max-w-[460px] mb-2">I&apos;ve had the opportunity to work with some amazing companies and teams over the years.</p>
 
         {jobs.map((job) => (
-          <div key={job.id} className="grid grid-cols-[180px,1fr] my-10"> 
-            <div className="text-sm uppercase font-bold text-grey-light top-[1px] relative">
+          <div key={job.id} className="grid grid-cols-1 @lg:grid-cols-[180px,1fr] my-10"> 
+            <div className="text-sm uppercase font-bold text-grey-light top-[1px] relative mb-4">
               {job.startDate} — {job.endDate}
             </div> 
 
