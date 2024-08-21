@@ -26,7 +26,7 @@ const links = [
 
 const Sidenav = () => {
   return (
-    <aside className="py-24 flex flex-col h-screen justify-between lg:sticky top-0">
+    <aside className="py-16 md:py-24 flex flex-col h-[100svh] justify-between lg:sticky top-0">
       <div>
         <div className="w-[160px] h-2 bg-blue mb-10" />
         <p className="text-sm mb-2">Hi, my name is</p>
