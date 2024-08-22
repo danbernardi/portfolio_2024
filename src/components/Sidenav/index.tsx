@@ -17,11 +17,11 @@ const links = [
     children: "Projects",
     color: 'pink'
   },
-  {
-    href: "#blog",
-    children: "Blog",
-    color: 'blue'
-  }
+  // {
+  //   href: "#blog",
+  //   children: "Blog",
+  //   color: 'blue'
+  // }
 ]
 
 const Sidenav = () => {

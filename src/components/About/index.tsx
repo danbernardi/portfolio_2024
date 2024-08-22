@@ -18,7 +18,7 @@ const About = () => {
           alt="Daniel Bernardi"
           width={1200}
           height={673}
-          className="rounded my-6"
+          className="rounded mt-6 mb-16 md:mt-6 md:mb-6"
         />
       </div>
     </>

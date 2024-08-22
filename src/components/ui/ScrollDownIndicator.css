@@ -1,0 +1,88 @@
+.mouse {
+  position: relative;
+  width: 22px;
+  height: 40px;
+  margin: -35px 0 0 -20px;
+  border: 1px solid var(--grey-lightest);
+  border-radius: 10px;
+  padding-top: 7px;
+}
+
+:root {
+  --dragLength: 7px;
+}
+
+@keyframes point {
+  0% {
+    opacity: 1;
+    transform: scale(1.6);
+  }
+  
+  25% {
+    opacity: 0.6;
+    transform: scale(0.8);
+  }
+  
+  50% {
+    transform: scale(0.8);
+  }
+  
+  85% {
+    opacity: 1;
+    transform: translateY(var(--dragLength)) scale(1);
+  }
+  
+  100% {
+    opacity: 0;
+    transform: translateY(var(--dragLength)) scale(0.1);
+  }
+}
+  
+    
+.mouse:before,
+.mouse:after {
+  position: absolute  ;
+  width: 4px;
+  height: 4px;
+  left: 50%;
+  margin-left: -2px;
+  border-radius: 2px;
+  transform-orgin: center center;
+  display: block;
+  content: '';
+}
+
+.mouse:before {
+  background-color: var(--grey-lightest);
+  animation: point 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+@keyframes ring  {
+  40% {
+    opacity: 0
+  }
+  
+  45% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  63% {
+    opacity: 0;
+    transform: scale(3);
+  }
+  
+  75% {
+    opacity: 0;
+    transform: translateY(var(--dragLength)) scale(1);
+  }
+    
+  100% {
+    opacity: 0;
+  }
+}
+
+.mouse:after {
+  border: 1px solid var(--grey-lightest);
+  animation: ring 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}

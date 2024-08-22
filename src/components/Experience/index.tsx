@@ -81,7 +81,7 @@ const Experience = () => {
 
             <div className="border-b-[1px] border-b-grey pb-4">
               <h3 className="font-extrabold uppercase mb-3">{job.title} —<br /><span className="text-sm text-grey-light">{job.company}</span></h3>            
-              <p className="text-sm">{job.description}</p>
+              <p className="text-sm mb-4">{job.description}</p>
               <ul className='flex flex-wrap my-2 gap-1 text-green'>
                 {job.stack.map((stack, index) => (
                   <li key={stack} className="text-xs gap-1 flex">

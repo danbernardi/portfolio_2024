@@ -1,5 +1,6 @@
 import Anchor from "@/components/ui/Anchor";
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 type Project = {
   id: number;
@@ -8,6 +9,7 @@ type Project = {
   siteUrl: string;
   description: string;
   stack: string[];
+  imageUrl?: string;
 }
 
 const projects: Project[] = [
@@ -16,23 +18,17 @@ const projects: Project[] = [
     title: "Gamesalmanac",
     repoUrl: "https://github.com/danbernardi/gamesalmanac",
     siteUrl: "https://gamesalmanac.com",
+    imageUrl: "/gamesalmanac_preview.jpg",
     description: "A web app for tracking upcoming video game releases. Data is sourced from the IGDB.com API.",
     stack: ["React", "TypeScript", "TailwindCSS", 'NextJS', 'shadcn/ui'],
-  },
-  {
-    id: 2,
-    title: "Buttery UI",
-    repoUrl: "https://github.com/danbernardi/buttery-ui",
-    siteUrl: "https://buttery-ui.vercel.app",
-    description: "A smooth ass react based component library. Built with TypeScript, Storybook and TailwindCSS.",
-    stack: ["React", "TypeScript", "TailwindCSS", 'Storybook', 'NPM'],
   },
   {
     id: 3,
     title: "Tetrift",
     repoUrl: "https://github.com/danbernardi/tetrift-2024",
     siteUrl: "https://tetrift.vercel.app",
-    description: "Tetris clone built with React. This was originally a hackathon project from my days at Redshift Digital. I recently rebuilt it to work with the latest version of react.",
+    imageUrl: "/tetrift_preview.jpg",
+    description: "Tetris clone built with React. This was originally a hackathon project from my days at Redshift Digital. I recently rebuilt it to work with modern build tools.",
     stack: ["React", "Sass"],
   },
   {
@@ -40,6 +36,7 @@ const projects: Project[] = [
     title: "useMediaQuery",
     repoUrl: "https://github.com/danbernardi/use-media-query",
     siteUrl: "",
+    imageUrl: "/usemediaquery_preview.jpg",
     description: "A custom react hook for managing media queries in a React environment. Deployed as an npm package.",
     stack: ["React", "TypeScript", 'Vite', 'NPM'],
   },
@@ -55,9 +52,19 @@ const projects: Project[] = [
     id: 6,
     repoUrl: "https://github.com/danbernardi/portfolio_2024",
     siteUrl: "https://www.danbernardi.work",
+    imageUrl: "/portfolio_2024_preview.jpg",
     title: "Portfolio 2024",
-    description: "This site that you're on right now. It's a simple portfolio site to showcase my work and experience.",
+    description: "This site that you're on right now. It's a simple portfolio site to showcase my work and experience, and also an excuse to play with framer motion.",
     stack: ["React", "TypeScript", 'NextJS', 'Framer Motion'],
+  },
+  {
+    id: 2,
+    title: "Buttery UI — Work in progress",
+    repoUrl: "https://github.com/danbernardi/buttery-ui",
+    siteUrl: "https://buttery-ui.vercel.app",
+    imageUrl: "/buttery_ui_preview.jpg",
+    description: "A smooth ass react based component library. Built with TypeScript, Storybook and TailwindCSS.",
+    stack: ["React", "TypeScript", "TailwindCSS", 'Storybook', 'NPM'],
   },
 ];
 
@@ -73,7 +80,19 @@ const Projects = () => {
         {projects.map((project) => (
           <div key={project.id} className="grid grid-cols-1 @lg:grid-cols-[180px,1fr] my-10"> 
             <div className="mr-6 mb-4">
-              <div className="bg-grey rounded w-full h-[120px]" />
+              {project.imageUrl
+                ? (
+                  <Image
+                    src={project.imageUrl}
+                    alt={project.title}
+                    width={960}
+                    height={530}
+                    className="rounded border-[6px] border-grey"
+                  />
+                )
+                : (
+                  <div className="bg-grey rounded w-full h-[120px]" />
+                )}
             </div> 
 
             <div className="border-b-[1px] border-b-grey pb-4">
@@ -98,7 +117,7 @@ const Projects = () => {
                   </a>
                 </div>
               </h3>            
-              <p className="text-sm">{project.description}</p>
+              <p className="text-sm mb-4">{project.description}</p>
               <ul className='flex flex-wrap gap-1 my-2 text-pink'>
                 {project.stack.map((stack, index) => (
                   <li key={stack} className="text-xs gap-1 flex">
