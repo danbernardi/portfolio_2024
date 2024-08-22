@@ -1,4 +1,5 @@
 import Anchor from "@/components/ui/Anchor";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -12,7 +13,13 @@ const About = () => {
         <p className="mt-4">Velit ut inventore animi. Sequi ab minus corrupti inventore facere dolore et. Sit adipisci qui rerum deserunt libero et at enim. Ea repellendus debitis aliquid commodi aliquid eligendi hic aliquid optio eaque inventore labore. Aliquam nesciunt ea dolor accusamus illum aut quos nemo in cupiditate quis.</p>
         <p className="mt-4">Deserunt pariatur rerum ex aliquid voluptatem qui. Nam temporibus inventore illo voluptatem eveniet dolores nostrum.</p>
 
-        <div className="w-full h-[280px] bg-grey my-6 rounded" />
+        <Image
+          src="/about.jpg"
+          alt="Daniel Bernardi"
+          width={1200}
+          height={673}
+          className="rounded my-6"
+        />
       </div>
     </>
   );
