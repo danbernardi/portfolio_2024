@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@dbernardi/use-media-query':
-        specifier: ^0.0.1
-        version: 0.0.1
+        specifier: ^1.0.1
+        version: 1.0.1
       '@tailwindcss/container-queries':
         specifier: ^0.1.1
         version: 0.1.1(tailwindcss@3.4.10)
@@ -80,8 +80,8 @@ packages:
     resolution: {integrity: sha512-7dRy4DwXwtzBrPbZflqxnvfxLF8kdZXPkhymtDeFoFqE6ldzjQFgYTtYIFARcLEYDrqfBfYcZt1WqFxRoyC9Rw==}
     engines: {node: '>=6.9.0'}
 
-  '@dbernardi/use-media-query@0.0.1':
-    resolution: {integrity: sha512-X5Mz0xj0WaBicFYe3zLS8oZIsRrnGCeZQ0DsyaSBcWUydIA3yilaQL/7xqecjhSRNvG8n3iiBCWFlPOSNOrS6Q==}
+  '@dbernardi/use-media-query@1.0.1':
+    resolution: {integrity: sha512-TicdwYDzkVvw8U/BJLP22cD4Rm3erGGeuqoP92fU3D1BupL+drRR1QsCOGv5okxzhuueYgZeQ6t/gmxhAIcvkA==}
 
   '@eslint-community/eslint-utils@4.4.0':
     resolution: {integrity: sha512-1/sA4dwrzBAyeUoQ6oxahHKmrZvsnLCg4RfxW3ZFGGmQkSNQPFNLV9CUEFQP1x9EYXHTo5p6xdhZM1Ne9p/AfA==}
@@ -1614,7 +1614,7 @@ snapshots:
     dependencies:
       regenerator-runtime: 0.14.1
 
-  '@dbernardi/use-media-query@0.0.1':
+  '@dbernardi/use-media-query@1.0.1':
     dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
