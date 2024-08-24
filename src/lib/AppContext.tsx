@@ -1,9 +1,11 @@
 'use client';
 
 import { useState, createContext, type ReactNode, useContext } from 'react';
+import { useMediaQuery, type Options, type UseMediaQueryReturnType } from '@dbernardi/use-media-query';
 
 type Props = {
   children: ReactNode;
+  options: Options;
 };
 
 type AppState = {
@@ -12,6 +14,7 @@ type AppState = {
 
 export type AppContextType = {
   appState: AppState;
+  mediaQuery: UseMediaQueryReturnType;
   onSetAppState:  (appState: AppState) => void;
 };
 
@@ -21,8 +24,9 @@ const initialState: AppState = {
 
 export const AppContext = createContext<AppContextType>({} as AppContextType);
 
-export function AppContextProvider({ children }: Props) {
+export function AppContextProvider({ children, options }: Props) {
   const [appState, setAppState] = useState<AppState>(initialState);
+  const mediaQuery = useMediaQuery(options ?? {});
 
   const onSetAppState = (state: Partial<AppState>) => {
     setAppState({
@@ -32,7 +36,7 @@ export function AppContextProvider({ children }: Props) {
   }
 
   return (
-    <AppContext.Provider value={ { appState, onSetAppState } }>
+    <AppContext.Provider value={ { appState, onSetAppState, mediaQuery } }>
       {children}
     </AppContext.Provider>
   );

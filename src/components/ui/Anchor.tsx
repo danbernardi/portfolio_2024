@@ -11,12 +11,13 @@ type Props = {
 };
 
 const Anchor = ({id, children, offset}: Props) => {
-  const {onSetAppState} = useAppContext();
+  const {onSetAppState, mediaQuery: {bpIsGT}} = useAppContext();
+  
 
   return (
     <div id={id}>
       <Waypoint
-        onEnter={() => onSetAppState({ hash: `#${id}` })}
+        onEnter={() => bpIsGT('tabletLg') && onSetAppState({ hash: `#${id}` })}
         // topOffset={offset ?? '100px'}
         // bottomOffset={offset ?? '100px'}
       >{children}</Waypoint>
