@@ -5,7 +5,7 @@ import { useMediaQuery, type Options, type UseMediaQueryReturnType } from '@dber
 
 type Props = {
   children: ReactNode;
-  options: Options;
+  options?: Options;
 };
 
 type AppState = {

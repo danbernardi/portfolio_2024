@@ -10,8 +10,8 @@ import { AppContextProvider } from "@/lib/AppContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Daniel Bernardi",
-  description: "Portfolio site for Daniel Bernardi",
+  title: "Daniel Bernardi: Font End Developer and UX Designer",
+  description: "Portfolio site for Daniel Bernardi, a front-end developer and UX designer based in Vancouver, Washington.",
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn(inter.className, 'bg-grey-darkest')}>
       <div className="grid grid-cols-[1fr] lg:grid-cols-[4fr,2fr,6fr] min-h-[100svh] px-6 sm:px-10 max-w-[1280px] mx-auto relative">
-        <AppContextProvider options={{}}>
+        <AppContextProvider>
           <Sidenav />
           <ScrollIndicator />
           <main>

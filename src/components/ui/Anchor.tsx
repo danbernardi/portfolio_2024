@@ -12,7 +12,6 @@ type Props = {
 
 const Anchor = ({id, children, offset}: Props) => {
   const {onSetAppState, mediaQuery: {bpIsGT}} = useAppContext();
-  
 
   return (
     <div id={id}>
