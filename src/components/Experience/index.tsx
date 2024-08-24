@@ -19,7 +19,7 @@ const jobs: Job[] = [
     location: "Remote",
     startDate: "Jul 2022",
     endDate: "May 2024",
-    description: "Deserunt alias reprehenderit perspiciatis nihil ut reprehenderit eum. Ducimus iste et atque commodi sed aut sed voluptates.",
+    description: "Developed and maintained scalable, high-performance user interfaces for the Netlify app, focusing on enterprise clients, while contributing to architectural decisions, code reviews, automated testing, and developer tools.",
     stack: ["React", "TypeScript", "TailwindCSS", 'Redux', 'Highcharts'],
   },
   {
@@ -29,7 +29,7 @@ const jobs: Job[] = [
     location: "San Francisco, CA",
     startDate: "May 2019",
     endDate: "Jul 2022",
-    description: "Et veniam alias fuga corrupti expedita nobis in hic. Tenetur sed aut fuga eum qui qui voluptatum eum nemo asperiores beatae.",
+    description: "Oversaw front end strategy, made architectural decisions, developed front end tooling, and lead impactful projects like White Label Stores which became a major growth driver for the company.",
     stack: ["React", "Sass", 'Storybook', 'Redux', 'Rails', 'Framer Motion'],
   },
   {
@@ -39,7 +39,7 @@ const jobs: Job[] = [
     location: "San Francisco, CA",
     startDate: "May 2015",
     endDate: "Apr 2019",
-    description: "Inventore vel possimus minus voluptatum debitis unde et nulla sit. Praesentium ad est porro non ab natus tenetur aut nulla. Labore ut cum sunt provident voluptate cumque minima.",
+    description: "Led the development of scalable design systems and full-scale web and mobile apps in React and React Native, collaborating closely with design and research teams for clients like Kaiser Permanente, Netflix, and One Medical.",
     stack: ["React", 'JavaScript', "Sass", 'Redux', 'GSAP', 'D3.js', 'React Native', 'UX Design'],
   },
   {
@@ -49,7 +49,7 @@ const jobs: Job[] = [
     location: "San Francisco, CA",
     startDate: "Sep 2013",
     endDate: "Apr 2015",
-    description: "Autem ab animi sint iste similique quo sint. Asperiores adipisci enim hic deserunt molestias et nemo dolor provident. Eos impedit ducimus rerum hic tempora qui quod blanditiis voluptatem nobis. Nisi qui facilis eum aliquam commodi nobis.",
+    description: "Led end-to-end web projects for local businesses in SF, specializing in designing and developing custom WordPress sites, as well as creating logos, brochures, and other branding materials while managing client relationships and integrating feedback to deliver successful, purpose-built websites.",
     stack: ['Wordpress', 'HTML', 'CSS', 'JavaScript', 'PHP', 'UX Design'],
   },
   {
@@ -59,7 +59,7 @@ const jobs: Job[] = [
     location: "Antioch, CA",
     startDate: "Aug 2010",
     endDate: "Sep 2013",
-    description: "Et veniam alias fuga corrupti expedita nobis in hic. Tenetur sed aut fuga eum qui qui voluptatum eum nemo asperiores beatae.",
+    description: "Working for my family's local web design business, I began my career by building and maintaining custom WordPress themes for local businesses, developing a strong passion for front-end design and development that continues to drive my work today.",
     stack: ['Wordpress', 'HTML', 'CSS', 'JavaScript', 'PHP', 'UX Design'],
   }
 ];

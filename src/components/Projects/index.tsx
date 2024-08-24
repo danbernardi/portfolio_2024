@@ -6,7 +6,7 @@ type Project = {
   id: number;
   title: string;
   repoUrl: string;
-  siteUrl: string;
+  siteUrl?: string;
   description: string;
   stack: string[];
   imageUrl?: string;
@@ -28,8 +28,8 @@ const projects: Project[] = [
     repoUrl: "https://github.com/danbernardi/tetrift-2024",
     siteUrl: "https://tetrift.vercel.app",
     imageUrl: "/tetrift_preview.jpg",
-    description: "Tetris clone built with React. This was originally a hackathon project from my days at Redshift Digital. I recently rebuilt it to work with modern build tools.",
-    stack: ["React", "Sass"],
+    description: "Tetris clone built with React. This was originally a hackathon project from my days at Redshift Digital. I recently retooled it to work with modern build processes.",
+    stack: ["React", "Sass", "UI Design"],
   },
   {
     id: 4,
@@ -51,7 +51,7 @@ const projects: Project[] = [
   {
     id: 6,
     repoUrl: "https://github.com/danbernardi/portfolio_2024",
-    siteUrl: "https://www.danbernardi.work",
+    // siteUrl: "https://www.danbernardi.work",
     imageUrl: "/portfolio_2024_preview.jpg",
     title: "Portfolio 2024",
     description: "This site that you're on right now. It's a simple portfolio site to showcase my work and experience, and also an excuse to play with framer motion.",
@@ -61,9 +61,9 @@ const projects: Project[] = [
     id: 2,
     title: "Buttery UI — Work in progress",
     repoUrl: "https://github.com/danbernardi/buttery-ui",
-    siteUrl: "https://buttery-ui.vercel.app",
+    // siteUrl: "https://buttery-ui.vercel.app",
     imageUrl: "/buttery_ui_preview.jpg",
-    description: "A smooth ass react based component library. Built with TypeScript, Storybook and TailwindCSS.",
+    description: "A smooth ass react based component library. Built with TypeScript, Storybook and TailwindCSS. It's currently a work in progress but I'll have more to show soon.",
     stack: ["React", "TypeScript", "TailwindCSS", 'Storybook', 'NPM'],
   },
 ];
@@ -107,14 +107,16 @@ const Projects = () => {
                   >
                     View repository <ArrowUpRight size={16} className="ml-1" />
                   </a>
-                  <a
-                    href={project.siteUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center text-sm text-grey-light hover:text-pink"
-                  >
-                    View site <ArrowUpRight size={16} className="ml-1" />
-                  </a>
+                  {project.siteUrl && (
+                    <a
+                      href={project.siteUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center text-sm text-grey-light hover:text-pink"
+                    >
+                      View site <ArrowUpRight size={16} className="ml-1" />
+                    </a>
+                  )}
                 </div>
               </h3>            
               <p className="text-sm mb-4">{project.description}</p>
