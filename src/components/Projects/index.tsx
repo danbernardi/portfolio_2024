@@ -35,7 +35,7 @@ const projects: Project[] = [
     id: 4,
     title: "useMediaQuery",
     repoUrl: "https://github.com/danbernardi/use-media-query",
-    siteUrl: "",
+    siteUrl: "https://www.npmjs.com/package/@dbernardi/use-media-query",
     imageUrl: "/usemediaquery_preview.jpg",
     description: "A custom react hook for managing media queries in a React environment. Deployed as an npm package.",
     stack: ["React", "TypeScript", 'Vite', 'NPM'],
